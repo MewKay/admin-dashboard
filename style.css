@@ -4,9 +4,18 @@
   --main-content-color: #9e9e9e;
 }
 
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
 body {
   min-height: 100vh;
   display: flex;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /* -- Layout -- */
@@ -41,14 +50,13 @@ header {
 
 .search-section {
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 10% minmax(3rem, 1fr);
   justify-items: center;
   align-items: center;
 }
 
-.btn-search {
-  border: none;
-  background-color: var(--header-color);
+.search-bar {
+ justify-self: start; 
 }
 
 /* --- Sidebar --- */
@@ -69,6 +77,21 @@ main {
 
 header {
   background-color: var(--header-color);
+}
+
+/* ---- Top Header ---- */
+
+.btn-search {
+  border: none;
+  background-color: var(--header-color);
+}
+
+.search-bar {
+  background-color: var(--main-content-color);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  min-width: 80%;
 }
 
 /* --- Sidebar --- */
