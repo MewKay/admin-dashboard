@@ -28,6 +28,27 @@ body {
 header {
   grid-area: header;
   padding: 1rem 2rem;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+}
+
+/* ---- Top Header ---- */
+
+.top-header {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.search-section {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  justify-items: center;
+  align-items: center;
+}
+
+.btn-search {
+  border: none;
+  background-color: var(--header-color);
 }
 
 /* --- Sidebar --- */
