@@ -1,0 +1,62 @@
+:root {
+  --header-color: #ffffff;
+  --sidebar-color: #037d92;
+  --main-content-color: #9e9e9e;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* -- Layout -- */
+
+/* --- Wrapper --- */
+
+.wrapper {
+  flex: auto;
+  display: grid;
+  grid: 
+    "sidebar header" 1fr
+    "sidebar main" 4fr /
+    1fr 4fr;
+  
+}
+
+/* --- Header --- */
+
+header {
+  grid-area: header;
+}
+
+/* --- Sidebar --- */
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+/* --- Main Content --- */
+
+main {
+  grid-area: main;
+}
+
+/* -- Style -- */
+
+/* --- Header --- */
+
+header {
+  background-color: var(--header-color);
+}
+
+/* --- Sidebar --- */
+
+.sidebar {
+  background-color: var(--sidebar-color);
+}
+
+/* --- Main Content --- */
+
+main {
+  background-color: var(--main-content-color);
+}
