@@ -85,6 +85,13 @@ header {
 .bottom-header .user-welcome {
   place-self: start;
 }
+
+.btn-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
 /* --- Sidebar --- */
 
 .sidebar {
