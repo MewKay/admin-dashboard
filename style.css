@@ -125,6 +125,29 @@ li {
 
 main {
   grid-area: main;
+  display: grid;
+  grid: 
+    "project announc" 1.5fr
+    "project trend" 1fr /
+    5fr 1fr;
+}
+
+/* ---- Projects ---- */
+
+.projects {
+  grid-area: project;
+}
+
+/* ---- Announcements ---- */
+
+.announcements {
+  grid-area: announc;
+}
+
+/* ---- Trending ---- */
+
+.trending {
+  grid-area: trend;
 }
 
 /* -- Style -- */
