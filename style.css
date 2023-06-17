@@ -196,6 +196,23 @@ main {
   grid-area: trend;
 }
 
+.trending .content {
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.users {
+  display: flex;
+}
+
+.trending .info {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
 /* -- Style -- */
 
 /* --- Header --- */
