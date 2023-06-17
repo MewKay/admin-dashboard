@@ -1,7 +1,8 @@
 :root {
-  --header-color: #ffffff;
-  --sidebar-color: #037d92;
-  --main-content-color: #9e9e9e;
+  --white-color: #fafafa;
+  --blue-color: #3b82f6;
+  --slate-color: #cbd5e1;
+  --orange-color: #f97316;
 }
 
 * {
@@ -218,18 +219,18 @@ main {
 /* --- Header --- */
 
 header {
-  background-color: var(--header-color);
+  background-color: var(--white-color);
 }
 
 /* ---- Top Header ---- */
 
 .btn-search {
   border: none;
-  background-color: var(--header-color);
+  background-color: var(--white-color);
 }
 
 .search-bar {
-  background-color: var(--main-content-color);
+  background-color: var(--slate-color);
   border: none;
   border-radius: 20px;
   padding: 0.5rem 1rem;
@@ -238,14 +239,14 @@ header {
 
 .btn-notif {
   border: none;
-  background-color: var(--header-color);
+  background-color: var(--white-color);
 }
 
 /* ---- Bottom Header ---- */
 
 .btn-header {
-  background-color: var(--sidebar-color);
-  color: var(--header-color);
+  background-color: var(--blue-color);
+  color: var(--white-color);
   font-weight: bold;
   font-size: .8rem;
   border: none;
@@ -256,23 +257,23 @@ header {
 /* --- Sidebar --- */
 
 .sidebar {
-  background-color: var(--sidebar-color);
+  background-color: var(--blue-color);
   font-size: 1.5rem;
-  color: var(--header-color);
+  color: var(--white-color);
 }
 
 /* --- Main Content --- */
 
 main {
-  background-color: var(--main-content-color);
+  background-color: var(--slate-color);
 }
 
 /* ---- Projects ---- */
 
 .card {
-  background-color: var(--header-color);
+  background-color: var(--white-color);
 }
 
 .content {
-  background-color: var(--header-color);
+  background-color: var(--white-color);
 }
