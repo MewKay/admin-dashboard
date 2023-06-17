@@ -131,7 +131,7 @@ main {
     "project announc" 1.5fr
     "project trend" 1fr /
     3fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .section-title {
@@ -149,6 +149,29 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5rem;
+}
+
+.card {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  margin-bottom: .4rem;
+  flex: 1;
+}
+
+.description {
+  flex: 1;
+}
+
+.btn-container {
+  flex: 2 1 3rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 1rem;
 }
 
 /* ---- Announcements ---- */
