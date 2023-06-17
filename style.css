@@ -191,6 +191,10 @@ main {
   padding: 1rem 0rem;
 }
 
+.information .title {
+  margin-bottom: .3rem;
+}
+
 /* ---- Trending ---- */
 
 .trending {
@@ -283,4 +287,11 @@ main {
 .btn-container button {
   border: none;
   background-color: var(--white-color);
+}
+
+/* ---- Announcements ---- */
+
+.information:not(:first-child):not(:last-child) {
+  border-top: 2px solid var(--slate-color);
+  border-bottom: 2px solid var(--slate-color);
 }
