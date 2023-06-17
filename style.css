@@ -109,6 +109,18 @@ header {
   grid-template-columns: 20% 90%;
 }
 
+/* ---- Navigation & Branding ---- */
+
+ul {
+  display: grid;
+  gap: 1rem;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 20% 90%;
+}
+
 /* --- Main Content --- */
 
 main {
