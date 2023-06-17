@@ -152,6 +152,8 @@ header {
 
 .sidebar {
   background-color: var(--sidebar-color);
+  font-size: 1.5rem;
+  color: var(--header-color);
 }
 
 /* --- Main Content --- */
