@@ -180,6 +180,16 @@ main {
   grid-area: announc;
 }
 
+.announcements .content {
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.information {
+  padding: 1rem 0rem;
+}
+
 /* ---- Trending ---- */
 
 .trending {
@@ -243,5 +253,9 @@ main {
 /* ---- Projects ---- */
 
 .card {
+  background-color: var(--header-color);
+}
+
+.content {
   background-color: var(--header-color);
 }
