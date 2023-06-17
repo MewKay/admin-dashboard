@@ -125,11 +125,17 @@ li {
 
 main {
   grid-area: main;
+  padding: 2rem 1.5rem;
   display: grid;
   grid: 
     "project announc" 1.5fr
     "project trend" 1fr /
-    5fr 1fr;
+    3fr 1fr;
+    gap: 1rem;
+}
+
+.section-title {
+  margin-bottom: .7rem;
 }
 
 /* ---- Projects ---- */
