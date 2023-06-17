@@ -102,6 +102,13 @@ header {
   gap: 5rem;
 }
 
+/* ---- Title Section ---- */
+
+.title-section {
+  display: grid;
+  grid-template-columns: 20% 90%;
+}
+
 /* --- Main Content --- */
 
 main {
