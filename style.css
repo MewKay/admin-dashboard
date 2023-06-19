@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300;1,500&display=swap');
+
 :root {
   --white-color: #fafafa;
   --blue-color: #3b82f6;
@@ -13,6 +15,8 @@
 body {
   min-height: 100vh;
   display: flex;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 button:hover {
@@ -111,8 +115,9 @@ header {
 /* ---- Title Section ---- */
 
 .title-section {
-  display: grid;
-  grid-template-columns: 20% 90%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* ---- Navigation & Branding ---- */
@@ -265,10 +270,13 @@ header {
 
 /* ---- Bottom Header ---- */
 
+.user-info-section p:last-child {
+  font-size: 1.5rem;
+}
+
 .btn-header {
   background-color: var(--blue-color);
   color: var(--white-color);
-  font-weight: bold;
   font-size: .8rem;
   border: none;
   border-radius: 20px;
@@ -283,10 +291,27 @@ header {
   color: var(--white-color);
 }
 
+.title-section .material-icons,
+.title-section {
+  font-size: 2rem;
+}
+
 /* --- Main Content --- */
 
 main {
   background-color: var(--slate-color);
+}
+
+.content {
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+
+.description,
+.info,
+.status {
+  font-weight: normal;
+  color: grey;
 }
 
 /* ---- Projects ---- */
@@ -295,10 +320,6 @@ main {
   background-color: var(--white-color);
   border-radius: 10px;
   border-left: 10px solid var(--orange-color);
-}
-
-.content {
-  background-color: var(--white-color);
 }
 
 .btn-container button {
@@ -311,4 +332,11 @@ main {
 .information:not(:first-child):not(:last-child) {
   border-top: 2px solid var(--slate-color);
   border-bottom: 2px solid var(--slate-color);
+}
+
+/* ---- Trending ---- */
+
+.info .username {
+  font-weight: normal;
+  color: black;
 }
