@@ -32,8 +32,8 @@ img {
   flex: auto;
   display: grid;
   grid: 
-    "sidebar header" 1fr
-    "sidebar main" 4fr /
+    "sidebar header" 20%
+    "sidebar main" 80% /
     1fr 4fr;
   
 }
@@ -42,7 +42,7 @@ img {
 
 header {
   grid-area: header;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   display: grid;
   grid-template-rows: 1fr 1.5fr;
 }
@@ -51,7 +51,7 @@ header {
 
 .top-header {
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 70% 30%;
 }
 
 .search-section {
@@ -68,6 +68,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
   place-items: center;
+  gap: 1rem;
 }
 
 /* ---- Bottom Header ---- */
@@ -82,14 +83,13 @@ header {
 .bottom-header .user-info-section {
   display: grid;
   grid-template-columns: 20% 80%;
+  justify-items: start;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.bottom-header .user-pfp {
-  place-self: center;
-}
-
-.bottom-header .user-welcome {
-  place-self: start;
+.bottom-header p:first-child {
+  margin-bottom: .625rem;
 }
 
 .btn-section {
@@ -133,11 +133,8 @@ main {
   grid-area: main;
   padding: 2rem 1.5rem;
   display: grid;
-  grid: 
-    "project announc" 1.5fr
-    "project trend" 1fr /
-    3fr 1fr;
-    gap: 1.5rem;
+  grid-template-columns: 3fr 1fr;
+  gap: 1.5rem;
 }
 
 .section-title {
@@ -147,13 +144,12 @@ main {
 /* ---- Projects ---- */
 
 .projects {
-  grid-area: project;
+  grid-column: 1;
 }
 
 .card-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
   gap: 1.5rem;
 }
 
@@ -180,10 +176,19 @@ main {
   gap: 1rem;
 }
 
+/* ---- Side Content ---- */
+
+.side-content {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 /* ---- Announcements ---- */
 
 .announcements {
-  grid-area: announc;
+  flex: 1;
 }
 
 .announcements .content {
@@ -203,7 +208,7 @@ main {
 /* ---- Trending ---- */
 
 .trending {
-  grid-area: trend;
+  flex: 1;
 }
 
 .trending .content {
