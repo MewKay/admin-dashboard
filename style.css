@@ -296,6 +296,10 @@ header {
   font-size: 2rem;
 }
 
+.credit a {
+  color: var(--white-color);
+}
+
 /* --- Main Content --- */
 
 main {
